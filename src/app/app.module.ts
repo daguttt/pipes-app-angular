@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ButtonModule } from 'primeng/button';
 import { AppComponent } from './app.component';
+
+// PrimeNG
+import { ButtonModule } from 'primeng/button';
+import { CardModule } from 'primeng/card';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, ButtonModule],
+  imports: [BrowserModule, ButtonModule, CardModule],
   providers: [],
   bootstrap: [AppComponent],
 })
