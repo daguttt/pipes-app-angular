@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+:is(*, *::before, *::after) {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-family);
+}
+
+body {
+  margin: 20px;
+  background-color: var(--surface-b)
+}
+
+.text-layout {
+  color: var(--text-color)
+}
