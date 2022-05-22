@@ -20,6 +20,7 @@ specifiers:
   karma-coverage: ~2.1.0
   karma-jasmine: ~4.0.0
   karma-jasmine-html-reporter: ~1.7.0
+  primeflex: ^3.2.0
   primeicons: ^5.0.0
   primeng: ^13.4.0
   rxjs: ~7.5.0
@@ -36,6 +37,7 @@ dependencies:
   '@angular/platform-browser': 13.3.8_ybyyx4d43psrssz4pzm3hjprhq
   '@angular/platform-browser-dynamic': 13.3.8_t6vvnf6tw36hgpkv6poryih7nq
   '@angular/router': 13.3.8_cds4atrh3lsqcz6iqi6iq5hfx4
+  primeflex: 3.2.0
   primeicons: 5.0.0
   primeng: 13.4.0_7o3vrk7zqaao5jzfvq4mvrs6fi
   rxjs: 7.5.5
@@ -5842,6 +5844,10 @@ packages:
     resolution: {integrity: sha512-FFw039TmrBqFK8ma/7OL3sDz/VytdtJr044/QUJtH0wK9lb9jLq9tJyIxUwtQJHwar2BqtiA4iCWSwo9JLkzFg==}
     engines: {node: '>=6'}
     dev: true
+
+  /primeflex/3.2.0:
+    resolution: {integrity: sha512-GjVNrp2k/MbO/vqs0wYUjsM6ejexymbGmtEzFpib5JEuwhL6HVJoxr3tmuAaL8RnOWNOPecVFauF2RqP2UXOhw==}
+    dev: false
 
   /primeicons/5.0.0:
     resolution: {integrity: sha512-heygWF0X5HFI1otlZE62pp6ye7sZ8om78J9au2BRkg8O7Y8AHTZ9qKMRzchZUHLe8zUAvdi6hZzzm9XxgwIExw==}

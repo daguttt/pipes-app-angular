@@ -4,6 +4,7 @@ import { PageBasicsComponent } from './pages/page-basics/page-basics.component';
 import { PageNonCommnonComponent } from './pages/page-non-commnon/page-non-commnon.component';
 import { PageNumbersComponent } from './pages/page-numbers/page-numbers.component';
 import { PageSortingComponent } from './pages/page-sorting/page-sorting.component';
+import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,7 @@ import { PageSortingComponent } from './pages/page-sorting/page-sorting.componen
     PageNumbersComponent,
     PageSortingComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, PrimeNgModule],
   exports: [
     PageBasicsComponent,
     PageNonCommnonComponent,
