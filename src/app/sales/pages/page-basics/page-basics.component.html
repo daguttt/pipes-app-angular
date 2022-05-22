@@ -1,5 +1,5 @@
 <div class="text-layout">
-  <h1>Pipes Básicos</h1>
+  <h2>Pipes Básicos</h2>
   <p>Pipes incluídos en Angular-Usualmente en el Common Module.</p>
 </div>
 <div class="flex">
@@ -16,6 +16,37 @@
   <div class="col-4">
     <p-card header="titlecase" [subheader]="completeName">
       ➡ {{ completeName | titlecase }}
+    </p-card>
+  </div>
+</div>
+<div class="text-layout">
+  <h2>Date | Fecha | Pipe</h2>
+  <p>Pipe para mostrar las fechas</p>
+</div>
+<div class="grid">
+  <div class="col-6">
+    <p-card>
+      <ul>
+        <li><pre>date</pre></li>
+        <li><pre>date | date(:'medium') (default)</pre></li>
+        <li><pre>date | date:'short'</pre></li>
+        <li><pre>date | date:'long'</pre></li>
+        <li>
+          Custom:
+          <pre>date | date:'dd, MM-ww YYYY'</pre>
+        </li>
+      </ul>
+    </p-card>
+  </div>
+  <div class="col-6">
+    <p-card>
+      <ul>
+        <li>{{ date }}</li>
+        <li>{{ date | date }}</li>
+        <li>{{ date | date: "short" }}</li>
+        <li>{{ date | date: "long" }}</li>
+        <li>Custom: {{ date | date: "dd, MM-ww YYYY" }}</li>
+      </ul>
     </p-card>
   </div>
 </div>
