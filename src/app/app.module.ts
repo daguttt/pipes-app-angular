@@ -5,10 +5,14 @@ import { AppComponent } from './app.component';
 import { SalesModule } from './sales/sales.module';
 import { SharedModule } from './shared/shared.module';
 
-// Set language
+// Set locales
 import { registerLocaleData } from '@angular/common';
 import localEsCO from '@angular/common/locales/es-CO';
+import localEsHN from '@angular/common/locales/es-HN';
+import localFr from '@angular/common/locales/fr';
 registerLocaleData(localEsCO);
+registerLocaleData(localEsHN);
+registerLocaleData(localFr);
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule, AppRouterModule, SharedModule, SalesModule],

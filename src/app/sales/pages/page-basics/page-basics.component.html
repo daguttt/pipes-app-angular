@@ -49,4 +49,27 @@
       </ul>
     </p-card>
   </div>
+  <div class="col-12 text-layout">
+    <h3>Timezone and locales</h3>
+  </div>
+  <div class="col-6">
+    <p-card>
+      <ul>
+        <li><pre>date | date:'long':'GMT-4'</pre></li>
+        <li><pre>date | date:'long':'GMT-6'</pre></li>
+        <li><pre>date | date:'long':'':'fr'</pre></li>
+        <li><pre>date | date:'long':'':'es-HN'</pre></li>
+      </ul>
+    </p-card>
+  </div>
+  <div class="col-6">
+    <p-card>
+      <ul>
+        <li>{{ date | date: "long":"GMT-4" }}</li>
+        <li>{{ date | date: "long":"GMT-6" }}</li>
+        <li>{{ date | date: "long":"":"fr" }}</li>
+        <li>{{ date | date: "long":"":"es-HN" }}</li>
+      </ul>
+    </p-card>
+  </div>
 </div>
