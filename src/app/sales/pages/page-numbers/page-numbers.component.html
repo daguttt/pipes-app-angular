@@ -6,11 +6,16 @@
 <div class="grid">
   <div class="col-4">
     <p-card header="Ventas Netas" subheader="Presente año">
-      <ul>
-        <li>{{ netSales | number: "":"es-HN" }} En Honduras</li>
-        <li>{{ netSales | number: "":"es-CO" }} En Colombia</li>
-        <li>{{ netSales | number: "":"fr" }} En Frances</li>
-      </ul>
+      <h4>Parametro: digitsInfo</h4>
+      <p>{{ netSales | number: "000.2-2" }}</p>
+      <!-- TODO: Ver https://angular.io/api/common/DecimalPipe#digitsinfo -->
+      <br />
+      <hr />
+      <br />
+      <h4>Parametro: locale</h4>
+      <p>{{ netSales | number: "":"es-HN" }} En Honduras</p>
+      <p>{{ netSales | number: "":"es-CO" }} En Colombia</p>
+      <p>{{ netSales | number: "":"fr" }} En Frances</p>
     </p-card>
   </div>
 </div>
