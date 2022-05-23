@@ -22,7 +22,7 @@ export class MenuComponent implements OnInit {
           {
             label: 'Numeros',
             icon: 'pi pi-dollar',
-            routerLink: 'num',
+            routerLink: 'numbers',
           },
           {
             label: 'Textos y Fechas',
