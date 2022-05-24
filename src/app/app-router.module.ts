@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PageBasicsComponent } from './sales/pages/page-basics/page-basics.component';
-import { PageNonCommnonComponent } from './sales/pages/page-non-commnon/page-non-commnon.component';
+import { PageNonCommonComponent } from './sales/pages/page-non-commnon/page-non-common.component';
 import { PageNumbersComponent } from './sales/pages/page-numbers/page-numbers.component';
 import { PageSortingComponent } from './sales/pages/page-sorting/page-sorting.component';
 
@@ -13,7 +13,7 @@ const routes: Routes = [
   },
   {
     path: 'non-common',
-    component: PageNonCommnonComponent,
+    component: PageNonCommonComponent,
   },
   {
     path: 'numbers',

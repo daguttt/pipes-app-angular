@@ -25,7 +25,7 @@ export class MenuComponent implements OnInit {
             routerLink: 'numbers',
           },
           {
-            label: 'Textos y Fechas',
+            label: 'Poco comunes',
             icon: 'pi pi-globe',
             routerLink: 'non-common',
           },
