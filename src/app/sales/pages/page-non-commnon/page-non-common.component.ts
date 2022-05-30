@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styles: [],
 })
 export class PageNonCommonComponent {
+  // i18nSelectPipe
   public name: string = 'Jessica';
   public gender: string = 'femenino';
   public genderMap = {
@@ -18,4 +19,14 @@ export class PageNonCommonComponent {
       ? (this.gender = 'masculino')
       : (this.gender = 'femenino');
   }
+
+  // -**********************************-
+
+  // i18nPluralPipe
+  public customers: string[] = ['Maria', 'Daniel'];
+  public customersMap = {
+    '=0': 'no tenemos clientes esperando.',
+    '=1': 'tenemos un cliente esperando.',
+    other: 'tenemos # clientes esperando.',
+  };
 }
