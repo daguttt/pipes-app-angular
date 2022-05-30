@@ -4,7 +4,19 @@
 </div>
 <div class="grid">
   <div class="col md:col-6">
-    <p-fieldset legend="Header" [toggleable]="true">
+    <p-fieldset legend="i18nSelect Pipe" [toggleable]="true">
+      Saludos {{ name }}, es un placer
+      {{ gender | i18nSelect: genderMap }}
+      a nuestro evento.
+      <button
+        pButton
+        type="button"
+        icon="pi pi-sync"
+        class="p-button-sm p-button-rounded"
+        (click)="changeName()"
+      ></button>
+    </p-fieldset>
+    <p-fieldset legend="i18nPlural Pipe" [toggleable]="true">
       <p>Content</p>
     </p-fieldset>
   </div>
