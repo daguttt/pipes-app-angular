@@ -6,12 +6,15 @@ import { PageNumbersComponent } from './pages/page-numbers/page-numbers.componen
 import { PageSortingComponent } from './pages/page-sorting/page-sorting.component';
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 
+import { CustomUpperCasePipe } from './pipes/custom-uppercase.pipe';
+
 @NgModule({
   declarations: [
     PageBasicsComponent,
     PageNonCommonComponent,
     PageNumbersComponent,
     PageSortingComponent,
+    CustomUpperCasePipe,
   ],
   imports: [CommonModule, PrimeNgModule],
   exports: [
