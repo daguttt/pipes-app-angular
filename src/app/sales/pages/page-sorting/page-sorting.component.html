@@ -22,28 +22,42 @@
       (click)="toggleUppercase()"
       styleClass="p-button-info mr-1"
     ></p-button>
+    <!-- By default -->
+    <p-button
+      icon="pi pi-sort"
+      label="Default"
+      styleClass="p-button-help mr-1"
+      (onClick)="changeSorting('default')"
+    ></p-button>
     <!-- By name -->
     <p-button
       icon="pi pi-sort"
       label="Por nombre"
       styleClass="p-button-warning mr-1"
+      (onClick)="changeSorting('name')"
     ></p-button>
     <!-- By flies -->
     <p-button
       icon="pi pi-sort"
       label="Vuela"
       styleClass="p-button-succes mr-1"
+      (onClick)="changeSorting('flies')"
     ></p-button>
     <!-- By color -->
     <p-button
       icon="pi pi-sort"
       label="Por color"
       styleClass="p-button-danger mr-1"
+      (onClick)="changeSorting('color')"
     ></p-button>
   </div>
 </p-toolbar>
 
-<p-table [value]="heroes | sort" responsiveLayout="scroll" styleClass="mt-2">
+<p-table
+  [value]="heroes | sort: sortBy"
+  responsiveLayout="scroll"
+  styleClass="mt-2"
+>
   <ng-template pTemplate="header">
     <tr>
       <th>Nombre</th>

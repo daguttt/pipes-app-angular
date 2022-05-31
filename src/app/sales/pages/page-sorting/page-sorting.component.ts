@@ -8,6 +8,7 @@ import { Color, Hero } from '../../interfaces/sales.interface';
 })
 export class PageSortingComponent {
   public isInUppercase: boolean = true;
+  public sortBy: string = '';
   public heroes: Hero[] = [
     {
       name: 'Superman',
@@ -37,5 +38,8 @@ export class PageSortingComponent {
   ];
   toggleUppercase() {
     this.isInUppercase = !this.isInUppercase;
+  }
+  changeSorting(sortBy: string) {
+    this.sortBy = sortBy;
   }
 }
