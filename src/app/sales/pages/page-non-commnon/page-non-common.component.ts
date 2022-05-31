@@ -71,7 +71,7 @@ export class PageNonCommonComponent {
   // -**********************************-
 
   // AsyncPipe
-  public myObservable = interval(1000).pipe(tap(console.log));
+  public myObservable = interval(1000);
   public myPromise = new Promise((resolve, _) => {
     setTimeout(() => {
       resolve('Tengo la data de la promsea');
