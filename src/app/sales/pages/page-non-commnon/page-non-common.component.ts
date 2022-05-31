@@ -39,4 +39,13 @@ export class PageNonCommonComponent {
   removeCustomerFromList() {
     this.customers.pop();
   }
+
+  // -**********************************-
+
+  // KeyValuePipe
+  public person = {
+    name: 'Daniel',
+    age: 19,
+    profession: 'Dev',
+  };
 }
