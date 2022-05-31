@@ -48,4 +48,22 @@ export class PageNonCommonComponent {
     age: 19,
     profession: 'Dev',
   };
+
+  // -**********************************-
+
+  // JsonPipe
+  public heros = [
+    {
+      name: 'Superman',
+      flies: true,
+    },
+    {
+      name: 'Robin',
+      flies: false,
+    },
+    {
+      name: 'Aquaman',
+      flies: false,
+    },
+  ];
 }
