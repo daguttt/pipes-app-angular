@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Color, Hero } from '../../interfaces/sales.interface';
 
 @Component({
   selector: 'app-page-sorting',
@@ -7,6 +8,33 @@ import { Component } from '@angular/core';
 })
 export class PageSortingComponent {
   public isInUppercase: boolean = true;
+  public heroes: Hero[] = [
+    {
+      name: 'Superman',
+      flies: true,
+      color: Color.blue,
+    },
+    {
+      name: 'Batman',
+      flies: false,
+      color: Color.black,
+    },
+    {
+      name: 'Robin',
+      flies: false,
+      color: Color.green,
+    },
+    {
+      name: 'Daredevil',
+      flies: false,
+      color: Color.red,
+    },
+    {
+      name: 'Linterna verde',
+      flies: true,
+      color: Color.green,
+    },
+  ];
   toggleUppercase() {
     this.isInUppercase = !this.isInUppercase;
   }

@@ -39,21 +39,19 @@
   </div>
 </p-toolbar>
 
-<p-table [value]="[]" responsiveLayout="scroll" styleClass="mt-2">
+<p-table [value]="heroes" responsiveLayout="scroll" styleClass="mt-2">
   <ng-template pTemplate="header">
     <tr>
-      <th>Code</th>
-      <th>Name</th>
-      <th>Category</th>
-      <th>Quantity</th>
+      <th>Nombre</th>
+      <th>Vuela</th>
+      <th>Color</th>
     </tr>
   </ng-template>
-  <ng-template pTemplate="body" let-product>
+  <ng-template pTemplate="body" let-hero>
     <tr>
-      <td>{{ product.code }}</td>
-      <td>{{ product.name }}</td>
-      <td>{{ product.category }}</td>
-      <td>{{ product.quantity }}</td>
+      <td>{{ hero.name }}</td>
+      <td>{{ hero.flies }}</td>
+      <td>{{ hero.color }}</td>
     </tr>
   </ng-template>
 </p-table>
