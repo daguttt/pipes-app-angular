@@ -7,6 +7,7 @@ import { PageSortingComponent } from './pages/page-sorting/page-sorting.componen
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 
 import { CustomUpperCasePipe } from './pipes/custom-uppercase.pipe';
+import { FliesPipe } from './pipes/flies.pipe';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { CustomUpperCasePipe } from './pipes/custom-uppercase.pipe';
     PageNumbersComponent,
     PageSortingComponent,
     CustomUpperCasePipe,
+    FliesPipe,
   ],
   imports: [CommonModule, PrimeNgModule],
   exports: [
