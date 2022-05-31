@@ -73,3 +73,30 @@
     </tr>
   </ng-template>
 </p-table>
+<p-table
+  [value]="heroes | slice: 0"
+  responsiveLayout="scroll"
+  styleClass="mt-2"
+>
+  <!-- Copy of heroes with slice pipe -->
+  <ng-template pTemplate="header">
+    <tr>
+      <th pSortableColumn="name">
+        Nombre<p-sortIcon field="name"></p-sortIcon>
+      </th>
+      <th pSortableColumn="flies">
+        Vuela<p-sortIcon field="flies"></p-sortIcon>
+      </th>
+      <th pSortableColumn="color">
+        Color<p-sortIcon field="color"></p-sortIcon>
+      </th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-hero>
+    <tr>
+      <td>{{ hero.name }}</td>
+      <td>{{ hero.flies | flies | titlecase }}</td>
+      <td>{{ hero.color }}</td>
+    </tr>
+  </ng-template>
+</p-table>
