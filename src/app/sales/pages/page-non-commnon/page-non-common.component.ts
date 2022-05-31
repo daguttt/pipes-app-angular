@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { interval, tap } from 'rxjs';
 
 @Component({
   selector: 'app-page-non-common',
@@ -66,4 +67,14 @@ export class PageNonCommonComponent {
       flies: false,
     },
   ];
+
+  // -**********************************-
+
+  // AsyncPipe
+  public myObservable = interval(1000).pipe(tap(console.log));
+  public myPromise = new Promise((resolve, _) => {
+    setTimeout(() => {
+      resolve('Tengo la data de la promsea');
+    }, 3500);
+  });
 }

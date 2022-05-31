@@ -60,8 +60,18 @@
     </p-fieldset>
   </div>
   <div class="col md:col-6">
-    <p-fieldset legend="KeyValue Pipe" [toggleable]="true">
+    <p-fieldset legend="Json Pipe" [toggleable]="true">
       <pre>{{ heros | json }}</pre>
+    </p-fieldset>
+  </div>
+  <div class="col md:col-6">
+    <p-fieldset legend="Async Pipe" [toggleable]="true">
+      <pre *ngIf="!(myObservable | async)"> <!-- 1er Observer -->
+Esperando resolución del Interval</pre>
+      <!-- 2do Observer -->
+      <pre>{{ myObservable | async }}</pre>
+      <pre *ngIf="!(myPromise | async)">Esperando resolución de la Promesa</pre>
+      <pre>{{ myPromise | async }}</pre>
     </p-fieldset>
   </div>
 </div>
