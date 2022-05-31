@@ -15,22 +15,26 @@
 <p-toolbar>
   <div class="p-toolbar-group-left"></div>
   <div class="p-toolbar-group-right">
+    <!-- Toggle uppercase -->
     <p-button
       label="Toggle Mayúsculas"
       icon="pi pi-sync"
       (click)="toggleUppercase()"
       styleClass="p-button-info mr-1"
     ></p-button>
+    <!-- By name -->
     <p-button
       icon="pi pi-sort"
       label="Por nombre"
       styleClass="p-button-warning mr-1"
     ></p-button>
+    <!-- By flies -->
     <p-button
       icon="pi pi-sort"
-      label="Por valor"
+      label="Vuela"
       styleClass="p-button-succes mr-1"
     ></p-button>
+    <!-- By color -->
     <p-button
       icon="pi pi-sort"
       label="Por color"
@@ -39,7 +43,7 @@
   </div>
 </p-toolbar>
 
-<p-table [value]="heroes" responsiveLayout="scroll" styleClass="mt-2">
+<p-table [value]="heroes | sort" responsiveLayout="scroll" styleClass="mt-2">
   <ng-template pTemplate="header">
     <tr>
       <th>Nombre</th>
