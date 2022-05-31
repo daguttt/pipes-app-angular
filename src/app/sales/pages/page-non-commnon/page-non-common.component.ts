@@ -23,10 +23,20 @@ export class PageNonCommonComponent {
   // -**********************************-
 
   // i18nPluralPipe
-  public customers: string[] = ['Maria', 'Daniel'];
+  public customers: string[] = [
+    'Maria',
+    'Daniel',
+    'Hernando',
+    'Eduardo',
+    'Fernando',
+  ];
   public customersMap = {
     '=0': 'no tenemos clientes esperando.',
     '=1': 'tenemos un cliente esperando.',
     other: 'tenemos # clientes esperando.',
   };
+
+  removeCustomerFromList() {
+    this.customers.pop();
+  }
 }

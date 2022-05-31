@@ -5,9 +5,11 @@
 <div class="grid">
   <div class="col md:col-6">
     <p-fieldset legend="i18nSelect Pipe" [toggleable]="true">
-      Saludos {{ name }}, es un placer
-      {{ gender | i18nSelect: genderMap }}
-      a nuestro evento.
+      <span>
+        Saludos {{ name }}, es un placer
+        {{ gender | i18nSelect: genderMap }}
+        a nuestro evento.
+      </span>
       <button
         pButton
         type="button"
@@ -19,7 +21,16 @@
   </div>
   <div class="col md:col-6">
     <p-fieldset legend="i18nPlural Pipe" [toggleable]="true">
-      <p>Actualmente {{ customers.length | i18nPlural: customersMap }}</p>
+      <span>Actualmente {{ customers.length | i18nPlural: customersMap }}</span>
+      <button
+        pButton
+        type="button"
+        icon="pi pi-times"
+        iconPos="right"
+        label="Eliminar cliente"
+        class="p-button-danger ml-3"
+        (click)="removeCustomerFromList()"
+      ></button>
     </p-fieldset>
   </div>
 </div>
