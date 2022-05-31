@@ -1,16 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-page-sorting',
   templateUrl: './page-sorting.component.html',
-  styles: [
-  ]
+  styles: [],
 })
-export class PageSortingComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
+export class PageSortingComponent {
+  public isInUppercase: boolean = true;
+  toggleUppercase() {
+    this.isInUppercase = !this.isInUppercase;
   }
-
 }

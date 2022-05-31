@@ -1,5 +1,14 @@
 <div class="text-layout m-3">
   <h1>Pipes Personalizados</h1>
   <p>Pipes hechos propiamente [following the course :) ]</p>
-  <p>Example {{ "word" | customUppercase }}</p>
+  <p>
+    Ejemplo con word: ({{ '"word"' | customUppercase: isInUppercase }})
+    <button
+      pButton
+      label="Toggle Mayúsculas"
+      icon="pi pi-sync"
+      (click)="toggleUppercase()"
+      class="p-button-sm p-button-help"
+    ></button>
+  </p>
 </div>
