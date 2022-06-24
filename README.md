@@ -1,5 +1,7 @@
 # PipesApp
 
+![Pipes App Image](https://i.ibb.co/8XSVb0Y/pipes-app.png)
+
 ## Angular Concepts used on this project
 
 - Angular routing.
